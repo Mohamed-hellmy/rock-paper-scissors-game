@@ -61,17 +61,20 @@ void SetWinnerScreenColor(enWinner Winner)
     switch (Winner)
     {
     case enWinner::Player:
-        cout << system("Color 0A"); // Green for Player
+        cout << system("color 2F"); // Green for Player
         break;
     case enWinner::Computer:
-        cout << system("Color E4"); // Red for Computer
+        cout << system("color 4F"); // Red for Computer
 		cout << "\a"; // Beep sound for Computer win
         break;
     case enWinner::Draw:
-        cout << system("Color 16"); // Yellow for Draw
+        cout << system("color 6F"); // Yellow for Draw
         break;
     }
 }
+
+
+
 
 enGameChoice ReadPlayerChoice()
 {
